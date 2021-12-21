@@ -1,13 +1,3 @@
-##### startup script #####
-
-#!/opt/bin/lv_micropython -i
-
-import lvgl as lv
-
-import display_driver
-
-
-##### main script #####
 
 WIDTH  = 320
 HEIGHT  =  240
