@@ -43,7 +43,7 @@ def get_rgb888_from_rgb565(rgb565):
 
 
 for color in hds2xx_colors_565:
-    r, b, g = get_rgb888_from_rgb565(color)
+    r, g, b = get_rgb888_from_rgb565(color)
     lv_color = lv.color_make(0x55, 0x55, 0x55)
     lv_color.ch.red = r
     lv_color.ch.blue = b
@@ -58,7 +58,6 @@ canvas.center()
 
 
 ui_buf = []
-i = 0
 y_half = int(HEIGHT / 2)
 for y in range(0, HEIGHT):
     for x in range(0, INDEX_WIDTH):
